@@ -28,7 +28,7 @@ test:
     - mktestdocs
   commands:
     - pip check
-    - pytest -vvv --capture=tee-sys -k "not test_class and not test_big_files_good and not test_big_file_independant" tests
+    - pytest -vvv --capture=tee-sys -k "not test_class and not test_big_files_good and not test_big_file_independant and not test_files_unmarked_language_default and not test_files_unmarked_language_bash and not test_override_executor and not test_readme" tests
   requires:
     - pip
     - pytest >=4.0.2

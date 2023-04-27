@@ -1,11 +1,11 @@
-About mktestdocs
-================
+About mktestdocs-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mktestdocs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/koaning/mktestdocs
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mktestdocs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Run pytest against markdown files/docstrings.
 

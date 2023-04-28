@@ -1,5 +1,5 @@
 {% set name = "mktestdocs" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mktestdocs-{{ version }}.tar.gz
-  sha256: a6b401c63ac02ab683443e0fcb27c58fc8c2264cf4e9e93835741d234f917267
+  sha256: 44142b98223f02c7ba4629790d9ee83031fd4d8855577c6fbfc23103421d3872
 
 build:
   noarch: python

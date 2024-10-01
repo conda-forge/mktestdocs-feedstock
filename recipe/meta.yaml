@@ -1,5 +1,5 @@
 {% set name = "mktestdocs" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mktestdocs-{{ version }}.tar.gz
-  sha256: 44142b98223f02c7ba4629790d9ee83031fd4d8855577c6fbfc23103421d3872
+  sha256: 12535a28e4a1793396444e1d5bd811c5f39660fe04b132c6aac1bef2630bd2ec
 
 build:
   noarch: python
@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - python >=3.6
 

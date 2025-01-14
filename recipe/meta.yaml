@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mktestdocs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mktestdocs-{{ version }}.tar.gz
   sha256: 12535a28e4a1793396444e1d5bd811c5f39660fe04b132c6aac1bef2630bd2ec
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -33,6 +33,7 @@ test:
   requires:
     - pip
     - pytest >=4.0.2
+    - python {{ python_min }}
 
 about:
   home: https://github.com/koaning/mktestdocs
